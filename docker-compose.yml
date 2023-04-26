@@ -14,7 +14,8 @@ services:
   db:
     image: postgres
     volumes:
-      - db_data:/var/lib/postgresql/data
+#      - db_data:/var/lib/postgresql/data
+      - "C:\\postgreVolume:/data/db"
     environment:
       POSTGRES_USER: ehrbase
       POSTGRES_PASSWORD: ehrbase
@@ -29,7 +30,7 @@ services:
     ports:
       - "4040:27017"
     volumes:
-      - ./data:/data/db
+      - "C:\\Mongodb:/data/db"
     environment:
       - MONGO_INITDB_DATABASE=alexMongo # изменение имени базы данных
 #      - MONGO_INITDB_ROOT_USERNAME=alex
