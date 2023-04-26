@@ -1,0 +1,25 @@
+.dashboard {
+    grid-area: content;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 36px;
+}
+
+.patients {
+    height: 20%;
+    margin: 70px auto 0 auto;
+}
+
+.table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pagination {
+    margin: 20px auto 0 auto;
+    width: 90%;
+    position: sticky;
+}

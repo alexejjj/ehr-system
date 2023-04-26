@@ -1,0 +1,72 @@
+.patient {
+    grid-area: content;
+}
+
+.patient__header {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 31px;
+}
+
+.name {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.2px;
+    color: #25282B;
+}
+
+.date {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.2px;
+    color: #25282B;
+}
+
+.content__area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.item {
+    padding: 33px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #A0A4A8;
+    margin-bottom: 18px;
+}
+
+.value {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #25282B;
+}
+
+.column {
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление доктора</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<!-- HTML-форма для ввода данных о докторе -->
+<form id="doctorForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <label for="position">Позиция:</label>
+    <input type="text" id="position" name="position">
+    <br>
+    <input type="submit" value="Добавить доктора">
+</form>
+
+<script>
+    // Обработка события отправки формы
+    $('#doctorForm').submit(function(event) {
+        event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+        // Извлекаем данные из формы
+        const name = $('#name').val();
+        const surname = $('#surname').val();
+        const email = $('#email').val();
+        const password = $('#password').val();
+        const position = $('#position').val();
+
+        // Отправляем POST-запрос на сервер
+        $.post('/add', { name, surname, email, password, position })
+            .done(function(data) {
+                // В случае успешного выполнения запроса выводим сообщение
+                alert('Доктор успешно добавлен!');
+            })
+            .fail(function() {
+                // В случае ошибки выводим сообщение
+                alert('Ошибка при добавлении доктора.');
+            });
+    });
+</script>
+</body>
+</html>

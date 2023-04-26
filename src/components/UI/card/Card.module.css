@@ -1,0 +1,94 @@
+.card {
+    display: flex;
+    /*border: 1px solid black;*/
+    width: 20%;
+    max-width: 360px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    flex: 1;
+    height: 7rem !important;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+    background: #CEDCFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__text__area {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__icon {
+    font-size: 30px;
+}
+
+.card__value {
+    color: #336CFB;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.chart__container {
+    width: 80%;
+}
+
+.chart__title__area {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.chart__title {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+}
+
+.close__btn {
+    margin-left: auto;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close__btn:hover {
+    background: #336CFB;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.large__card {
+    /*position: absolute;*/
+    width: 80%;
+    height: 70vh;
+    z-index: 9;
+    /*left: 30rem;*/
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: white;
+}
+

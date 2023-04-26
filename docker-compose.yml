@@ -1,0 +1,38 @@
+version: "3"
+services:
+  ehrbase:
+    image: ehrbase/ehrbase:0.16.5
+    environment:
+      SPRING_DATASOURCE_URL: "jdbc:postgresql://db:5432/ehrbase"
+      SPRING_DATASOURCE_USERNAME: "ehrbase"
+      SPRING_DATASOURCE_PASSWORD: "ehrbase"
+      SERVER_AQLCONFIG_USEJSQUERY: "false"
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+  db:
+    image: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ehrbase
+      POSTGRES_PASSWORD: ehrbase
+      POSTGRES_DB: ehrbase
+      WEB_CORS_ALLOWEDORIGINS: https://www.test-cors.org/
+      WEB_CORS_ALLOWEDORIGINPATTERNS: https://*.test-cors.org
+      WEB_CORS_ALLOWEDMETHODS: GET,PUT,DELETE,POST,OPTIONS
+      WEB_CORS_ALLOWCREDENTIALS: 'true'
+
+  mongodb:
+    image: mongo
+    ports:
+      - "4040:27017"
+    volumes:
+      - ./data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=alexMongo # изменение имени базы данных
+#      - MONGO_INITDB_ROOT_USERNAME=alex
+#      - MONGO_INITDB_ROOT_PASSWORD=mypass
+volumes:
+  db_data:

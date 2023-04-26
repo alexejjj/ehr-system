@@ -1,0 +1,85 @@
+.patients {
+    grid-area: content;
+}
+
+.patients__title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.2px;
+    color: #25282B;
+    margin: 0 0 15px 3%;
+}
+
+.table__block {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #E8E8E8;
+    border-radius: 10px 10px 0 0;
+}
+
+.table__body {
+
+}
+
+.row {
+    width: 100%;
+    background: #ffffff;
+}
+
+.item {
+    width: 250px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #52575C;
+    word-break: break-all;
+    padding: 18px 0 18px 0;
+}
+
+.table__line {
+    border: 1px solid #E8E8E8;
+    transform: rotate(-0.1deg);
+}
+
+.table__block {
+
+}
+
+.header__row {
+    width: 100%;
+    text-align: left;
+}
+
+.header__item {
+    /*margin-right: 145px;*/
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #25282B;
+    padding: 18px 0 18px 0;
+}
+
+table > tbody > tr > td:first-child, table > thead > tr > th:first-child {
+    display: flex;
+    margin-left: 12px;
+}

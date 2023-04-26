@@ -1,0 +1,42 @@
+.profile {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #25282B;
+
+}
+
+.profile__area {
+
+}
+
+.text__area {
+
+}
+
+.close__btn {
+
+}
+
+.avatar {
+
+}
+
+.name {
+
+}
+
+.email {
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 200px;
+}
+
+.icon {
+
+}

@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    display: grid;
+    grid-template-areas: 'sidebar header'
+                         'sidebar content';
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 7fr;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: #F6F8FB;
+}

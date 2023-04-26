@@ -1,0 +1,131 @@
+.new__patient {
+    grid-area: content;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.2px;
+    color: #25282B;
+    margin: 0 0 15px 3%;
+}
+
+.patient__form {
+    display: grid;
+    overflow: auto;
+    padding: 20px 0 181px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    max-height: 700px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.input__block {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+}
+
+.input__field {
+    margin: 15px 0 20px 0;
+    width: 195px;
+    outline: none;
+    border: solid #A0A4A8;
+    border-width: 0 0 2px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+::placeholder {
+    color: #A0A4A8;
+}
+
+.button__field {
+    width: 32px;
+    height: 32px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #25282B;
+    background: #ffffff;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.button__field__focus {
+    background: #336CFB;
+    color: #FFFFFF;
+}
+
+.dropdown__field {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    background: #ffffff;
+    border: 1px solid #E8E8E8;
+    width: 178px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #25282B;
+}
+
+.dropdown__option {
+
+}
+
+.info__block {
+    align-self: center;
+    margin-top: 30px;
+}
+
+.label__field {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #A0A4A8;
+    margin-bottom: 10px;
+}
+
+.plus__button {
+    margin-top: 20%;
+    margin-left: 250%;
+    position: sticky;
+    --b: 5px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    border: 20px solid #336CFB;
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b),#336CFB 90deg,#fff 0)
+        calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+        calc(50%  + var(--b))   calc(50%  + var(--b));
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+}
